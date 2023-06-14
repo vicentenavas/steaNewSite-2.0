@@ -17,7 +17,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%; /* Ancho predeterminado para dispositivos móviles */
+  width: 75%; /* Ancho predeterminado para dispositivos móviles */
   max-width: 75%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 9999;
@@ -32,6 +32,16 @@
   }
 }
 
+/* Estilos iniciales para los elementos */
+.scroll-hide {
+
+  transition: opacity 1s;
+}
+
+/* Estilos para ocultar los elementos al hacer scroll */
+.scroll-hide.hidden {
+  opacity: 0;
+}
 
 
   .custom-menu ul {
@@ -76,5 +86,22 @@
 
   
   
+@keyframes flyIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-  
+.animated-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button svg {
+  animation: flyIn 0.5s ease-in-out forwards;
+}
