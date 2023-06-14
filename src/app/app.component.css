@@ -1,0 +1,58 @@
+/* Estilos Tailwind CSS para la barra de navegación */
+
+
+
+
+
+.custom-menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 60%;
+    min-width: 22%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  .custom-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    flex-grow: 1; /* Añadimos flex-grow para que los enlaces ocupen el espacio disponible */
+    
+  }
+  
+  .custom-menu li {
+    margin: 0.5rem 0;
+  }
+  
+  .custom-menu a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .custom-menu a:hover {
+    color: #ff2600;
+  }
+  
+  .close-button {
+    padding-right: 10px;
+    padding-top: 16px;
+    align-self: flex-end;
+    margin-bottom: 1rem; /* Añadimos un margen inferior al botón de la cruz */
+  }
+  
+  
+
+  
