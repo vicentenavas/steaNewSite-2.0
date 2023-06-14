@@ -17,19 +17,21 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 75%; /* Ancho predeterminado para dispositivos móviles */
+  width: 50%; /* Ancho predeterminado para dispositivos móviles */
   max-width: 75%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 9999;
+
 }
 
 /* Media Query para dispositivos de escritorio */
 @media (min-width: 768px) {
   .custom-menu {
-    width: 20%; /* Ancho para dispositivos de escritorio */
-    max-width: 20%; /* Ancho para dispositivos de escritorio */
+    width: 25%; /* Ancho para dispositivos de escritorio */
+    max-width: 25%; /* Ancho para dispositivos de escritorio */
   }
 }
+
 
 
   .custom-menu ul {
