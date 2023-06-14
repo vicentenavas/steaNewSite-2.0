@@ -4,9 +4,9 @@
       Stea progetto
     </a>
     <button (click)="toggleMenu()" type="button"
-      class="inline-flex items-center  ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+      class="inline-flex items-center   mt-3 2xl:mr-0 xlmr-0 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
       <span class="not-sr-only"></span>
-      <svg width="64px" height="64px" viewBox="-3.6 -3.6 31.20 31.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+      <svg class="text-black fill-current h-12 w-12 md:h-8 md:w-8 xl:w-14 xl:h-14 2xl:h-26 2xl:w-16"viewBox="-3.6 -3.6 31.20 31.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
         <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
           <rect x="-3.6" y="-3.6" width="31.20" height="31.20" rx="15.6" fill="#f5f5f5" strokewidth="0"></rect>
         </g>
@@ -24,8 +24,8 @@
 
 <!-- Menú desplegable -->
 <div *ngIf="menuAbierto" class="custom-menu bg-black" #menuContainer>
-  <button   (click)="closeMenu()" type="button" class="text-gray-500 close-button">
-    <svg fill="#000000" height="32px" width="32px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-46.08 -46.08 552.93 552.93" xml:space="preserve" stroke="#000000" stroke-width="0.00460775" transform="matrix(1, 0, 0, -1, 0, 0)rotate(0)">
+  <button (click)="closeMenu()" type="button" class="close-button h-10 w-10 2xl:mr-2 ">
+    <svg class="text-black fill-current md:h-4 md:w-4 xl:w-8 xl:h-8 2xl:h-10 2xl:w-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-46.08 -46.08 552.93 552.93" xml:space="preserve" stroke="none" transform="matrix(1, 0, 0, -1, 0, 0)rotate(0)">
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
       <g id="SVGRepo_iconCarrier">
@@ -35,21 +35,34 @@
   </button>
   
   
+  
+  
+  
+  
+  
   <ul class="space-y-4">
     <li>
-      <a href="/" class="md:text-md xl:text-sm text-lg text-gray-900">Home</a>
+      <a href="/" class="md:text-md xl:text-sm text-lg  2xl:text-lg text-gray-900">Home</a>
     </li>
     <li>
-      <a href="/società" class="md:text-md text-lg xl:text-sm text-gray-900">Società</a>
+      <a href="/società" class="md:text-md text-lg xl:text-sm 2xl:text-lg text-gray-900">Società</a>
     </li>
     <li>
-      <a href="/contatti" class="md:text-md text-lg xl:text-sm  text-gray-900">Contatti</a>
+      <a href="/contatti" class="md:text-md text-lg xl:text-sm   2xl:text-lg text-gray-900">Contatti</a>
     </li>
-    <li *ngFor="let links of serviziList" class="md:text-md text-lg xl:text-sm text-gray-900  ">
+    <li *ngFor="let links of serviziList" class="md:text-md text-lg   2xl:text-lg xl:text-sm text-gray-900  ">
       <a      [routerLink]="['/servizi', links.id]">{{links.name}}</a>
     </li>
 
     
     
   </ul>
+  <div class="flex h-max space-x-12">
+    <img src="http://wp.steaprogetto.com/wp-content/uploads/stea_logo-w.png" alt="" class="2xl:h-32 2xl:w-32 h-16 w-16">
+    <div class="flex flex-col">
+      
+    <h1 class="2xl:text-xl space-x-2">Stea Progetto</h1>
+    <p class="text-xs">whatever i just doing the duty of model the information</p>
+    </div>
+  </div>
 </div>
