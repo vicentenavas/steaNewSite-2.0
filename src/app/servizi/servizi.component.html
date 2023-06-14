@@ -1,0 +1,38 @@
+<body *ngIf="servizio">
+    <div class="bg-black min-h-screen sm:flex">
+        <div class="sm:w-5/6 w-screen">
+            <img [src]="servizio.img[0].url" alt="Service Image  " 
+                    class="sm:object-cover   object-scale-down opacity-75 sm:flex-col sm:h-screen sm:w-full   h-128 w-screen">
+        </div>
+        <div class="sm:w-1/2 sm:pt-32 pt-8 text-white flex-col justify-center px-8 sm:px-24 pb-12">
+            <div class="flex justify-center sm:pb-4">
+                <h1 class="sm:text-4xl text-2xl font-semibold sm:pt-16 pb-12 opacity-0 animate-fadeIn ">{{ servizio.name }}</h1>
+            </div>
+
+            <div class="space-y-4 text-lg">
+                <p class="opacity-0 animate-fadeIn">{{ servizio.description[1].text }}</p>
+                <p class="opacity-0 animate-fadeIn">{{ servizio.description[2]?.text }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sm:flex flex-col-reverse sm:flex-row pt-14">
+        <div class="w-full sm:w-3/4 h-max px-8 sm:px-16 flex justify-center   pb-16">
+            <img [src]="servizio.img[1]?.url" alt="Service Image" class=" p-2" >
+        </div>
+
+        <div class="flex-col text-lg px-8 sm:px-10 sm:w-2/3 space-y-1 pt-2">
+            <h1 class="sm:text-xl text flex pb-8 ">In particolare Stea Progetto si occupa di:</h1>
+            <ul class="text-sm space-y-2 sm:text-base pb-12 list-disc">
+                <li *ngFor="let object of siOcuppaList">
+                    {{object.info}}
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,26 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,ts}"],
+  theme: {
+    fontFamily: {
+      sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        steaRed: "#f00s",
+      },
+      spacing: {
+        100: "32rem",
+        128: "48rem",
+      },
+      opacity: {
+        '65': '.65',
+        '60': '.60',
+        '55': '.55',
+        '75': '.75',
+        '80': '.80'
+      },
+    },
+  },
+  plugins: [],
+};

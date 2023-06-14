@@ -1,0 +1,21 @@
+<div class="pt-32 border h-screen flex justify-center space-x-24 content-center">
+    <div class="sm:w-1/4 w-screen px-2 items-center pt-32">
+        <h1 class="flex justify-center text-2xl pb-16">Contact with us!</h1>
+        <form [formGroup]="mailForm" (ngSubmit)="onSubmit()" class="flex flex-col space-y-1">
+            <input type="text" id="name" formControlName="name" class="border py-4 px-8 rounded-lg" placeholder="name:"/>
+            <input type="text" id="surname" formControlName="surname" class="border py-4 px-8 rounded-lg " placeholder="surname:"/>
+            <input type="text" id="mail" formControlName="mail" class="border py-4 px-8 rounded-lg "  placeholder="mail:"/>
+            <textarea type="text" id="messaje" formControlName="messaje" class="border py-4 px-8 rounded-lg " rows="7" placeholder="content:"></textarea>
+            <button type="submit" [disabled]="!mailForm.valid" class="bg-black text-white py-4 rounded-md hover:bg-gray-900">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="h-96 ">
+
+
+</div>
+
+<app-footer></app-footer>
