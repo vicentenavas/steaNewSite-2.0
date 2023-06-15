@@ -6,6 +6,9 @@ module.exports = {
       sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
     },
     extend: {
+      blur: {
+        xs: '0.5px',
+      },
       colors: {
         steaRed: "#f00s",
       },
