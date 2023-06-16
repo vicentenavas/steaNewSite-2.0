@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         steaRed: "#f00s",
+        whatever: '#f4e9cd'
       },
       spacing: {
         100: "32rem",
