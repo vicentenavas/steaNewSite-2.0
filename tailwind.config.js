@@ -10,6 +10,7 @@ module.exports = {
         xs: '0.5px',
       },
       colors: {
+        società: "#F6F6F6",
         steaRed: "#f00s",
         whatever: '#f4e9cd'
       },

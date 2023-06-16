@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ImgSliderComponent } from './img-slider/img-slider.component';
+import { SocioComponent } from './socio/socio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { ImgSliderComponent } from './img-slider/img-slider.component';
     FooterComponent,
     ContattiComponent,
     ImgSliderComponent,
+    SocioComponent,
     
   ],
   imports: [
