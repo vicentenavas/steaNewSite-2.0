@@ -1,17 +1,20 @@
 import { Component, HostListener, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
-
+import { DataService } from '../services/data/data.service';
+import { Servizio } from '../models/shared/model';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  servizio: Servizio[] = []
   animacionClase: string = '';
   frases: string[] = ['Una società di Engineering', 'Una società che guarda verso il futuro', 'Professionisti'];
   fraseActual: string = this.frases[0];
   animacionDerechaIzquierda: boolean = false;
   intervalo: any;
-  menuAbierto: boolean = false;
+  
+  constructor(private service: DataService){}
 
   @ViewChild('menuContainer') menuContainer!: ElementRef;
 
@@ -19,6 +22,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.intervalo = setInterval(() => {
       this.cambiarFrase();
     }, 5000); // Cambia la frase cada 5 segundos (5000 milisegundos)
+
+    this.servizio = this.service.getServizioList();
   }
 
   ngOnDestroy() {
@@ -42,23 +47,5 @@ export class HomeComponent implements OnInit, OnDestroy {
     }, 500); // Retraso de 500 milisegundos para permitir que se complete la animación
   }
 
-  @HostListener('document:click', ['$event'])
-  handleClick(event: Event) {
-    const target = event.target as HTMLElement;
-    const menuElement = this.menuContainer.nativeElement;
-  
-    // Comprueba si el elemento clicado está dentro del menú o el elemento de tu componente
-    if (!menuElement.contains(target)) {
-      // Lógica para cerrar el menú aquí
-      this.menuAbierto = false;
-    }
-  }
 
-  toggleMenu(): void {
-    this.menuAbierto = !this.menuAbierto;
-  }
-
-  closeMenu(): void {
-    this.menuAbierto = false;
-  }
 }

@@ -1,15 +1,15 @@
-<body *ngIf="servizio">
+<body *ngIf="servizio" class="">
     <div class="bg-black lg:min-h-screen sm:flex ">
         <div class="sm:w-5/6 w-screen">
             <img [src]="servizio.img[0].url" alt="Service Image  " 
                     class="sm:object-cover   object-scale-down opacity-75 sm:flex-col lg:h-screen sm:w-full   h-128 w-screen">
         </div>
-        <div class="sm:w-1/2 xl:pt-16 2xl:pt-32 pt-8 md:pt-12 text-white flex-col justify-center px-8 xl:px-24 pb-12">
+        <div class="sm:w-1/2 xl:pt-16 2xl:pt-32 pt-4 md:pt-4 text-white flex-col justify-center px-8 xl:px-24 pb-12">
             <div class="flex justify-center sm:pb-4">
-                <h1 class="sm:text-4xl text-2xl font-semibold sm:pt-16 pb-12 opacity-0 animate-fadeIn ">{{ servizio.name }}</h1>
+                <h1 class="sm:text-2xl xl:text-4xl text-2xl font-semibold sm:pt-16 pb-12 opacity-0 animate-fadeIn ">{{ servizio.name }}</h1>
             </div>
 
-            <div class="space-y-4 text-lg">
+            <div class="space-y-4 lg:text-lg text-base">
                 <p class="opacity-0 animate-fadeIn">{{ servizio.description[1].text }}</p>
                 <p class="opacity-0 animate-fadeIn">{{ servizio.description[2]?.text }}</p>
             </div>
@@ -32,7 +32,7 @@
 
         </div>
     </div>
+    
+
 </body>
 
-
-<app-footer></app-footer>

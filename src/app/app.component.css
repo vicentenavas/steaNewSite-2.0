@@ -27,8 +27,8 @@
 /* Media Query para dispositivos de escritorio */
 @media (min-width: 768px) {
   .custom-menu {
-    width: 25%; /* Ancho para dispositivos de escritorio */
-    max-width: 25%; /* Ancho para dispositivos de escritorio */
+    width: 23%; /* Ancho para dispositivos de escritorio */
+    max-width: 23%; /* Ancho para dispositivos de escritorio */
   }
 }
 

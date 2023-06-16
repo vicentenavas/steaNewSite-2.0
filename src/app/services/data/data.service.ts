@@ -179,7 +179,7 @@ export class DataService {
         {id: 1, text: "La nostra struttura svolge attività di coordinamento della sicurezza mediante predisposizione di Piani di Sicurezza e Coordinamento in fase progettuale e attività diretta di prevenzione e controllo presso i cantieri durante la fase esecutiva dell’opera.",},
         {id: 2, text: "Tra le attività svolte nei cantieri la Sicurezza è divenuta, con il passare degli anni, un argomento sempre di maggiore importanza. La nostra struttura ottempera alle disposizioni normative e legislative in ai sensi del Decreto Legislativo 81/2008 e ss. mm. e ii. svolgendo attività di coordinamento della sicurezza sia mediante la predisposizione di Piani di Sicurezza e Coordinamento in fase progettuale, sia mediante attività diretta di prevenzione e controllo presso i cantieri durante la fase esecutiva dell’opera. Nel corso degli anni si è avuta la possibilità di acquisire ed incrementare l’esperienza e di conseguire maggiore competenza grazie allo svolgimento di corsi specifici di aggiornamento."}
       ],
-      img: [{ id: 1, url: '/assets/img/home/img30.jpg' },
+      img: [{ id: 1, url: '/assets/img/home/img16.jpg' },
       { id: 2, url: '/assets/img/home/img26.jpg' }],
       
       siOcuppa:[ 
