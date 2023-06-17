@@ -7,7 +7,11 @@ export interface homeLinks {
 }
 
 
-
+export interface Socio{
+    id:number,
+    name: string,
+    description: string
+}
 
 export interface Servizio{
     id: number, 

@@ -3,6 +3,7 @@ import { Servizio, img, siOcuppa } from 'src/app/models/shared/model';
 import { Observable, of, throwError } from 'rxjs';
 import { NavigationEnd, Route, Router } from '@angular/router';
 import { Contact } from 'src/app/models/shared/model';
+import { Socio } from 'src/app/models/shared/model';
 @Injectable({
   providedIn: 'root',
 })
@@ -192,7 +193,12 @@ export class DataService {
     },
   ];
 
-
+socioList: Socio[] = [
+{id:1, name: 'ing. Giulia Benatti', description: 'Iscritta al n. 2248 dell’Albo degli Ingegneri della Provincia di Trento' },
+{id:1, name: 'ing. Giulia Benatti', description: 'Iscritta al n. 2248 dell’Albo degli Ingegneri della Provincia di Trento' },
+{id:1, name: 'ing. Giulia Benatti', description: 'Iscritta al n. 2248 dell’Albo degli Ingegneri della Provincia di Trento' },
+{id:1, name: 'ing. Giulia Benatti', description: 'Iscritta al n. 2248 dell’Albo degli Ingegneri della Provincia di Trento' }
+]
 
 
   //get all the services; check the models to understand the array
@@ -201,9 +207,17 @@ export class DataService {
   }
 
 
+  getSocio(): Socio[]{
+    return this.socioList;
+  }
   //dinamic routing...
   getServiizioDetailById(id: number): Servizio | undefined {
     return this.servizioList.find(servizio => servizio.id === id);
+  }
+
+
+  getSocioById(id: number): Socio | undefined {
+    return this.socioList.find(socio => socio.id === id)
   }
 //end of the home and service info
 //<--------------------------------------------------------------------------------------------------------------------------------------->
