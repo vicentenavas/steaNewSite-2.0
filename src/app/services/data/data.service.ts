@@ -140,7 +140,7 @@ export class DataService {
     },
     {
       id: 4,
-      name: 'Certificazioni Energetiche',
+      name: 'Certificazioni Energetiches',
       homeDescription: '',
       homeTitle: 'Certificazioni Energetiche',
       description: [

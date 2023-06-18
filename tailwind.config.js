@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         società: "#F6F6F6",
         steaRed: "#f00s",
-        whatever: '#f4e9cd'
+        
       },
       spacing: {
         100: "32rem",
